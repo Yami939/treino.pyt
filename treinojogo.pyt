@@ -69,3 +69,4 @@ while True:
     tela.blit(texto_formatado, (400, 40))
     
     pygame.display.update()
+
