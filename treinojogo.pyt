@@ -57,10 +57,10 @@ while True:
         if pygame.key.get_pressed()[K_s]:
             y = y + 20          
        
-    ret_roxo = pygame.draw.circle(tela, (60,26,198), (x,y), 30)
-    ret_verde = pygame.draw.circle(tela, (17,179,187), (x_verde,y_verde), 30)
+    cobra = pygame.draw.circle(tela, (60,26,198), (x,y,40,50))
+    maca = pygame.draw.circle(tela, (17,179,187), (x_verde,y_verde,40,50))
      
-    if ret_roxo.colliderect(ret_verde):
+    if cobra.colliderect(maca):
         x_verde = randint(40,600)
         y_verde = randint(50,430)
         pontos = pontos + 1
